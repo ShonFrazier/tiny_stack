@@ -31,7 +31,7 @@ printf("%s", some_text);
 
 If you print the stack pointer, you'll notice A) that it changes between calls and B) it's set to NULL when it's empty.
 As you push items on the array, new nodes are allocated, and as you pop, old nodes are freed. Drop it in your project,
-#include tstack.h, get to work...
+include tstack.h, get to work...
 
 Enjoy!
 
