@@ -24,6 +24,7 @@ really should only push pointers to the same types of objects.
 Pop items that you don't need on the stack:
 
 ```
+some_text = NULL;
 tstack_pop( &a_stack, &some_text );
 printf("%s", some_text);
 ```
