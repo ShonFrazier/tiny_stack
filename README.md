@@ -1,4 +1,4 @@
-Tiny Stacy
+Tiny Stack
 ==========
 
 A small stack implementation written in pure C. Adds no memory management overhead to your code. Adds 
