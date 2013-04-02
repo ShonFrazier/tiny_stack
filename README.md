@@ -5,10 +5,12 @@ A small stack implementation written in pure C. Adds no memory management overhe
 ( 2 * ( sizeof( void * ) ) ) of additional memory overhead per item stored on the stack.
 
 Create a new tstack_ref variable and initialize to NULL:
+
 ```tstack_ref a_stack = NULL;
 ```
 
 Push an item onto the empty stack:
+
 ```char *some_text = "I'm stacked!";
 ...
 tstack_push( &a_stack, some_text );
@@ -18,6 +20,7 @@ Keep pushing pointers to stuff to your heart's content. Keep in mind that C has 
 really should only push pointers to the same types of objects.
 
 Pop items that you don't need on the stack:
+
 ```tstack_pop( &a_stack, &some_text );
 printf("%s", some_text);
 ```
