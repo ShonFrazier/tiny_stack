@@ -6,12 +6,14 @@ A small stack implementation written in pure C. Adds no memory management overhe
 
 Create a new tstack_ref variable and initialize to NULL:
 
-```tstack_ref a_stack = NULL;
+```
+tstack_ref a_stack = NULL;
 ```
 
 Push an item onto the empty stack:
 
-```char *some_text = "I'm stacked!";
+```
+char *some_text = "I'm stacked!";
 ...
 tstack_push( &a_stack, some_text );
 ```
@@ -21,7 +23,8 @@ really should only push pointers to the same types of objects.
 
 Pop items that you don't need on the stack:
 
-```tstack_pop( &a_stack, &some_text );
+```
+tstack_pop( &a_stack, &some_text );
 printf("%s", some_text);
 ```
 
