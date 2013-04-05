@@ -161,5 +161,5 @@ bool tstack_copy(const tstack_ref *src, tstack_ref *dst) {
 		return false;
 	}
 	
-	return true;
+	return false;
 }
