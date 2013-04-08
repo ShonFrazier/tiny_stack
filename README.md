@@ -35,3 +35,8 @@ include tstack.h, get to work...
 
 Enjoy!
 
+
+Caveat
+======
+I'm not liking this "consistent" tstack_ref * as the first parameter to the API. Although it's const, I think I'd like
+it better if functions that don't change the pointer just accepted a tstack_ref. I'll change it soon...
