@@ -61,7 +61,7 @@ bool tstack_top(const tstack_ref *stack, item_ref *item);
  *
  * @param[in] stack A pointer to a tstack_ref variable. This value will not change on this call.
  * @param[out] count The number of items in the stack will be returned here.
- * @return false if stack is NULL, true otherwise
+ * @return false if stack or count is NULL, true otherwise
  */
 bool tstack_depth(const tstack_ref *stack, size_t *count);
 
@@ -70,7 +70,7 @@ bool tstack_depth(const tstack_ref *stack, size_t *count);
  *
  * @param[in] stack A pointer to a tstack_ref variable. This value will not change on this call.
  * @param[out] array An array of pointers, pre-allocated, within which pointers to all stacked items will be returned.
- * @return false if stack or count is NULL, else 0 if the tstack_ref is NULL, otherwise true.
+ * @return false if stack or array is NULL, otherwise true.
  */
 bool tstack_dump(const tstack_ref *stack, void **array);
 
